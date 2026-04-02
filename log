@@ -1,0 +1,14 @@
+Database Schema
+CREATE TABLE logs (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    timestamp DATETIME,
+    source_ip VARCHAR(45),
+    dest_ip VARCHAR(45),
+    protocol VARCHAR(10),
+    action VARCHAR(20),
+    threat_label VARCHAR(50),
+    log_type VARCHAR(50),
+    bytes_transferred INT,
+    user_agent TEXT,
+    request_path TEXT
+);
